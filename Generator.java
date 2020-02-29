@@ -13,7 +13,7 @@ public class Generator {
 
     public ArrayList<String> Instantiator() {
  String[] Letters = new String[]{ "A","B", "C", "D","E", "F", "G", "H","I", "J", "K", "L", "M", "N","O", "P", "Q", "R", "S", "T","U" ,"V","W", "X","Y", "Z" };        
- String[] Symbols = new String[]{"!","@","#","$","%","&"};
+ String[] Symbols = new String[]{"!","@","#","$","%","&","_"};
 
  Random random = new Random();
         
@@ -24,12 +24,12 @@ public class Generator {
             
             String str = String.valueOf(i);
             DataBase.add(str);
-            if(i<6){
+            if(i<Symbols.length){
             for(int z=0;z<5;z++){    
             DataBase.add(i,Symbols[i]);
             }
             }
-            else if(i<26){
+            else if(i<Letters.length){
                 DataBase.add(i,Letters[i]);
                 
             }
