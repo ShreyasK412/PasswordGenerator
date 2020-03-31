@@ -29,7 +29,6 @@ public class Generator {
 
     public String Creator(ArrayList<String> DataBase) {
         Random random = new Random();
-        int initial = random.nextInt(DataBase.size());
         String PassW = "j";
         for (int j = 0; j < length; j++) {
             int index = random.nextInt(DataBase.size());
